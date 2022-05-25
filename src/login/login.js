@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './login.css'
 import { useNavigate } from "react-router-dom";
 
@@ -31,7 +31,7 @@ function Login() {
             .then(response => response.json())
             .then(res => {
                 if (res.sucsses) {
-                    sessionStorage.setItem("isAuthenticated", true);
+                    sessionStorage.setItem("userId", res.data.id);
                     navigate('/chat', { state : { userInformation } })
                 }
                 else {

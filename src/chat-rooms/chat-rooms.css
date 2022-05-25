@@ -1,0 +1,20 @@
+.chat-room {
+    top: 70px;
+    left: 1668px;
+    width: 252px;
+    height: 1010px;
+    color: wheat;
+    background: #2A3042 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.chat-room .label {
+    font-size: 20px;
+    padding: 20%;
+}
+
+.chat-room .item {
+    font-size: 16px;
+    padding: 5%;
+    cursor: pointer;
+}
